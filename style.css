@@ -1,0 +1,159 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* My CSS */
+body {
+    background-color: #120638;
+    font-family: arial;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    text-shadow: 1.5px 1.5px 0 #333, 0px 1.5px 0 #333, -1.5px -1.5px 0 #333, -1.5px -1.5px 0 #333, -1.5px 1.5px 0 #333, 1.5px -1.5px 0 #333, 0.7778174593px 0.7778174593px 0 #aaaaaa, 1.5556349186px 1.5556349186px 0 #aaaaaa, 2.3334523779px 2.3334523779px 0 #aaaaaa, 3.1112698372px 3.1112698372px 0 #aaaaaa, 3.8890872965px 3.8890872965px 0 #aaaaaa, 4.6669047558px 4.6669047558px 0 #aaaaaa, 5.4447222151px 5.4447222151px 0 #aaaaaa, 6.2225396744px 6.2225396744px 0 #aaaaaa, 7.0003571337px 7.0003571337px 0 #aaaaaa, 7.7781745931px 7.7781745931px 0 #aaaaaa;
+
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+ul {
+    padding-top: 30px;
+}
+
+li {
+    margin: 18px 0;
+}
+
+img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px solid salmon;
+}
+
+.player-side {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.rock, .paper, .scissors {
+    transition: .3s;
+    position: relative;
+    top:0;
+    cursor: pointer;
+}
+
+.rock:hover,  .paper:hover, .scissors:hover, .active {
+    box-shadow: 0 0 10px 5px rgb(255, 255, 255);
+}
+
+
+.rock:active, .paper:active, .scissors:active {
+    top: 2px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.score {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.result-title {
+    width: 220px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid salmon;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 100px;
+    color: #f89bb4;
+    font-size: 26px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    margin-top: 20px;
+}
+
+.com-side {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.com-side-choice {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
