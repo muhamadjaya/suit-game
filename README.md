@@ -11,6 +11,7 @@ The game "suit" / rock paper scissors with Javascript DOM that implementation ab
 
 ### Screenshot
 
+![](./docs/banner.png)
 ![](./docs/ss1.png)
 ![](./docs/ss2.png)
 ![](./docs/ss3.png)
